@@ -1,0 +1,23 @@
+1. Medicação prescrita com quantidade (notificação) 
+1.1. notificação na hora que tem que tomar o medicamento, 
+1.2. quando abre a notificação, há um gif com as quantidades (maneiras de corte) + data e hora a tomar
+1.3. Check que tomou medicação (o botão check só aparece quando estiver na hora ou depois de tomar a medicação)
+2. Preenchimento de form com o que comeu (se for algo de risco) 
+2.1. Após fazer check que tomou a medicação aparecer um form com os alimentos de risco com uma checklist, 
+2.2. o utilizador selecciona os que comeu, 
+2.3. e depois de submeter os resultados estes são guardados
+2.4. Direcciona para a o próximo comprimido que vai ser necessário tomar (+ data e hora de tomar)
+4. Notifica o responsável se a pessoa ainda não foi à aplicação durante 24h 
+4.1. Passado 24h envia mensagem para o telemóvel do responsável a dizer que o Sr. (..) não utilizou a aplicação durante o dia e que não se sabe se os medicamentos foram tomados
+4.2. Notificação para o utilizador
+5. Preenchimento de um campo com info do responsável 
+5.1. haver form depois da primeira vez que alguém faz log in onde preenche com o nome do responsável e contacto dele
+6. Log in (cc) (não é importante para agora)
+6.1. sistema de log in onde preenche com o número do cartão de cidadão
+
+Nota: Notificações (ser possível ir buscar volume e som do alarme pré definido pelo utilizador)
+
+Sistema para o médico
+- Extensão ao programa PEM
+- Inserir os resultados do INR
+- Inserir planeamento semanal 
