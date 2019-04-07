@@ -11,9 +11,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".NotificationScreenActivity"></activity>
+        <activity android:name=".FakeHomepageActivity"></activity>
+        <activity android:name=".NotificationScreenActivity" />
         <activity android:name=".HomepageActivity" />
-        <activity android:name=".FoodActivity"></activity>
+        <activity android:name=".FoodActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,6 +29,5 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
     </application>
-
 
 </manifest>

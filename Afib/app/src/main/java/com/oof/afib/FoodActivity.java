@@ -227,7 +227,7 @@ public class FoodActivity extends AppCompatActivity {
         ImageButton ib = findViewById(R.id.submeter);
         ib.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent i = new Intent(FoodActivity.this, MainActivity.class);
+                Intent i = new Intent(FoodActivity.this, FakeHomepageActivity.class);
                 FoodActivity.this.startActivity(i);
             }
         });
