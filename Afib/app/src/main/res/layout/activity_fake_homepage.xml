@@ -20,7 +20,7 @@
             android:layout_marginLeft="40dp"
             android:layout_marginTop="10dp"
             android:fontFamily="@font/roboto_medium"
-            android:text="Terça-feira"
+            android:text="Segunda-feira"
             android:textColor="#fff"
             android:textSize="36sp"
             android:layout_marginRight="40dp"/>
@@ -30,7 +30,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="40dp"
             android:fontFamily="@font/roboto_bold"
-            android:text="16 de Julho"
+            android:text="15 de Julho"
             android:textColor="#fff"
             android:textSize="48sp"
             android:layout_marginRight="40dp"
@@ -44,30 +44,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
                 android:fontFamily="@font/roboto_bold"
-                android:text="17:00 H"
+                android:text="Já tomou!"
                 android:textColor="#fff"
                 android:textSize="40sp"
                 android:layout_marginRight="40dp"
-                />
-
-            <ImageView
-                android:layout_marginLeft="-20dp"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:src="@drawable/um"
-                android:layout_marginTop="-20dp"
-                />
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:src="@drawable/um"
-                android:layout_marginTop="-20dp"
-                />
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:src="@drawable/meio"
-                android:layout_marginTop="-20dp"
                 />
         </LinearLayout>
 
@@ -83,7 +63,63 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <LinearLayout
+                android:id="@+id/dia1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/dias"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:elevation="30dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="16 de Julho"
+                    android:textColor="#4B4B4B"
+                    android:fontFamily="@font/roboto"
+                    android:textSize="36sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Terça-feira"
+                        android:textColor="#4B4B4B"
+                        android:fontFamily="@font/roboto"
+                        android:textSize="26sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginBottom="20dp"/>
+                    <ImageView
 
+                        android:layout_width="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/um"
+                        android:layout_marginTop="-5dp"
+
+                        />
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_marginLeft="-10dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/um"
+                        android:layout_marginTop="-5dp"
+                        />
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_marginLeft="-10dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/meio"
+                        android:layout_marginTop="-5dp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
             <LinearLayout
                 android:id="@+id/dia2"
                 android:layout_width="match_parent"
