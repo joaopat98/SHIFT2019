@@ -2,7 +2,7 @@ package com.oof.afib;
 import com.loopj.android.http.*;
 
 public class HttpUtils {
-    private static final String BASE_URL = "tbd";
+    private static final String BASE_URL = "https://afib.herokuapp.com/";
 
     private static AsyncHttpClient client = new AsyncHttpClient();
 

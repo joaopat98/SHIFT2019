@@ -16,9 +16,15 @@ public class DjangoRestUsage {
     }
 
     public void getNewestPlans() {
-        HttpUtils.get("tdb/tdb.json", null, new JsonHttpResponseHandler() {
+        HttpUtils.get("user/11111111/dose", null, new JsonHttpResponseHandler() {
             @Override
             public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
+                // If the response is JSONObject instead of expected JSONArray
+                Intent i = new Intent(mainContext, HomepageActivity.class);
+                i.putExtra("json", response.toString());
+                mainContext.startActivity(i);
+            }
+            public void onSuccess(int statusCode, Header[] headers, JSONArray response) {
                 // If the response is JSONObject instead of expected JSONArray
                 Intent i = new Intent(mainContext, HomepageActivity.class);
                 i.putExtra("json", response.toString());
