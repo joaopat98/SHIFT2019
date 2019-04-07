@@ -8,7 +8,7 @@ from .models import *
 
 
 @csrf_exempt
-def take(request, user_id, dose_id):
+def take(request, username, dose_id):
     dose = UserDose.objects.filter(id=dose_id).first()
     if dose is not None:
         dose.taken = True
@@ -19,13 +19,13 @@ def take(request, user_id, dose_id):
 
 
 @csrf_exempt
-def get_doses(request, user_id):
-    lst = list(map(lambda dose: dose.serialize(), User.objects.filter(id=user_id).first().doses.all()))
+def get_doses(request, username):
+    lst = list(map(lambda dose: dose.serialize(), User.objects.filter(username=username).first().doses.all()))
     return JsonResponse(lst, safe=False)
 
 
 @csrf_exempt
-def register_risks(request, user_id, dose_id):
+def register_risks(request, username, dose_id):
     risks = json.loads(request.body)
     dose = UserDose.objects.filter(id=dose_id).first()
     if dose is not None:
