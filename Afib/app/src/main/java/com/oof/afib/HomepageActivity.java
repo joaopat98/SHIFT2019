@@ -33,7 +33,8 @@ public class HomepageActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        scheduleNotification(1);
+        /*
         String jsonextra = getIntent().getStringExtra("json");
         DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss");
         try{
@@ -51,8 +52,9 @@ public class HomepageActivity extends AppCompatActivity {
             e.printStackTrace();
             return;
         }
+        */
     }
-    public void scheduleNotification(long timestamp, int notificationId) {
+    public void scheduleNotification(int notificationId) {
         String CHANNEL_ID = "my_channel_" + Integer.toString(notificationId);
         CharSequence name = CHANNEL_ID;
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
@@ -61,8 +63,8 @@ public class HomepageActivity extends AppCompatActivity {
         }
 
         NotificationCompat.Builder builder = new NotificationCompat.Builder(this);
-        builder.setContentTitle("Scheduled Notification");
-        builder.setContentText("aaaaaaaaaaaaa");
+        builder.setContentTitle("Tem medicamentos por tomar!");
+        builder.setContentText("Clique nesta notificação para ver informação sobre que medicamentos tomar");
         builder.setSmallIcon(R.drawable.um);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             builder.setChannelId(CHANNEL_ID);
