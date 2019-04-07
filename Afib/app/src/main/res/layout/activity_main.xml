@@ -1,18 +1,402 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#D8D8D8"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:id="@+id/headerView"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:background="@drawable/verde"
+        android:orientation="vertical">
 
-</android.support.constraint.ConstraintLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Segunda-feira"
+            android:textColor="#fff"
+            android:textSize="36sp"
+            android:layout_marginRight="40dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="15 de Julho"
+            android:textColor="#fff"
+            android:textSize="48sp"
+            android:layout_marginRight="40dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="15:00 H"
+                android:textColor="#fff"
+                android:textSize="40sp"
+                android:layout_marginRight="40dp"
+                />
+
+            <ImageView
+                android:layout_marginLeft="-20dp"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/um"
+                android:layout_marginTop="-20dp"
+                />
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/um"
+                android:layout_marginTop="-20dp"
+                />
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/um"
+                android:layout_marginTop="-20dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/headerView" >
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/dia1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/dias"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:elevation="30dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="16 de Julho"
+                    android:textColor="#4B4B4B"
+                    android:fontFamily="@font/roboto"
+                    android:textSize="36sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Terça-feira"
+                        android:textColor="#4B4B4B"
+                        android:fontFamily="@font/roboto"
+                        android:textSize="26sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginBottom="20dp"/>
+                    <ImageView
+
+                        android:layout_width="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/um"
+                        android:layout_marginTop="-5dp"
+
+                        />
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_marginLeft="-10dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/um"
+                        android:layout_marginTop="-5dp"
+                        />
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_marginLeft="-10dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/meio"
+                        android:layout_marginTop="-5dp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/dia2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/dias"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:elevation="30dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="17 de Julho"
+                    android:textColor="#4B4B4B"
+                    android:fontFamily="@font/roboto"
+                    android:textSize="36sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Quarta-feira"
+                        android:textColor="#4B4B4B"
+                        android:fontFamily="@font/roboto"
+                        android:textSize="26sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginBottom="20dp"/>
+                    <ImageView
+
+                        android:layout_width="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/um"
+                        android:layout_marginTop="-5dp"
+
+                        />
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_marginLeft="-10dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/tres_quartos"
+                        android:layout_marginTop="-5dp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dia3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/dias"
+                android:elevation="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="18 de Julho"
+                    android:textColor="#4B4B4B"
+                    android:textSize="36sp" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:fontFamily="@font/roboto"
+                        android:text="Quinta-feira"
+                        android:textColor="#4B4B4B"
+                        android:textSize="26sp" />
+                    <ImageView
+
+                        android:layout_width="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/um"
+                        android:layout_marginTop="-5dp"
+
+                        />
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_marginLeft="-10dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/meio"
+                        android:layout_marginTop="-5dp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dia4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/dias"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:elevation="30dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="19 de Julho"
+                    android:textColor="#4B4B4B"
+                    android:fontFamily="@font/roboto"
+                    android:textSize="36sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sexta-feira"
+                        android:textColor="#4B4B4B"
+                        android:fontFamily="@font/roboto"
+                        android:textSize="26sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginBottom="20dp"/>
+                    <ImageView
+
+                        android:layout_width="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/um"
+                        android:layout_marginTop="-5dp"
+
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/dia5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/dias"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:elevation="30dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="20 de Julho"
+                    android:textColor="#4B4B4B"
+                    android:fontFamily="@font/roboto"
+                    android:textSize="36sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sábado"
+                        android:textColor="#4B4B4B"
+                        android:fontFamily="@font/roboto"
+                        android:textSize="26sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginBottom="20dp"/>
+                    <ImageView
+
+                        android:layout_width="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/um"
+                        android:layout_marginTop="-5dp"
+
+                        />
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_marginLeft="-10dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/um_quarto"
+                        android:layout_marginTop="-5dp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/dia6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/dias"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:elevation="30dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="21 de Julho"
+                    android:textColor="#4B4B4B"
+                    android:fontFamily="@font/roboto"
+                    android:textSize="36sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Domingo"
+                        android:textColor="#4B4B4B"
+                        android:fontFamily="@font/roboto"
+                        android:textSize="26sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginBottom="20dp"/>
+                    <ImageView
+
+                        android:layout_width="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/um"
+                        android:layout_marginTop="-5dp"
+
+                        />
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_marginLeft="-10dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/um"
+                        android:layout_marginTop="-5dp"
+                        />
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_marginLeft="-10dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/um_quarto"
+                        android:layout_marginTop="-5dp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
